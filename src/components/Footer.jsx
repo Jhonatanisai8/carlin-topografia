@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.jpg";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Facebook = ({ size = 24, className }) => (
@@ -64,14 +65,16 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
         <div className="space-y-6">
           <div className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-xl">
-              C
-            </div>
+            <img
+              src={logo}
+              alt="Carlin Topografía Logo"
+              className="w-12 h-12 rounded-xl object-cover shadow-xl"
+            />
             <h2 className="text-3xl font-black italic tracking-tighter">
               CARLIN <span className="text-primary">TOPOGRAFÍA</span>
             </h2>
           </div>
-          <p className="text-white/40 text-sm leading-relaxed italic pr-6 italic">
+          <p className="text-white/40 text-sm leading-relaxed italic pr-6">
             Equipos topográficos listos, precisos y sin complicaciones. Líderes
             en el sector B2B del Perú.
           </p>

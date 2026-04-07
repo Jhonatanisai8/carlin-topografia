@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.jpg";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Header = () => {
@@ -19,13 +20,15 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <nav className="bg-white/80 backdrop-blur-md border-b border-primary/10 py-4 px-6">
+      <nav className="bg-white/80 backdrop-blur-md border-b border-primary/10 py-3 md:py-4 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-              C
-            </div>
-            <h1 className="text-2xl font-black tracking-tighter text-secondary uppercase">
+            <img
+              src={logo}
+              alt="Carlin Topografía Logo"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg object-cover"
+            />
+            <h1 className="text-sm sm:text-lg md:text-2xl font-black tracking-tighter text-secondary uppercase leading-none">
               CARLIN <span className="text-primary">TOPOGRAFÍA</span>
             </h1>
           </div>
@@ -48,7 +51,7 @@ const Header = () => {
           </div>
           <a
             href="#contacto"
-            className="bg-primary text-white py-2 px-6 rounded-lg font-bold shadow-md hover:bg-primary/90 transition-all hover:scale-105 active:scale-95"
+            className="bg-primary text-white py-2 px-4 md:px-6 rounded-lg text-xs md:text-base font-bold shadow-md hover:bg-primary/90 transition-all hover:scale-105 active:scale-95"
           >
             Cotizar Ahora
           </a>
